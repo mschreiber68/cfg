@@ -1,0 +1,5 @@
+source ~/.bash.global
+
+if cat /etc/centos-release; then
+    source ~/.bash.centos
+fi
