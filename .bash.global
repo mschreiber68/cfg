@@ -56,4 +56,9 @@ man() {
     man "$@"
 }
 
+# Serve current directory at port 8000
+http-here() {
+    python -m SimpleHTTPServer
+}
+
 
