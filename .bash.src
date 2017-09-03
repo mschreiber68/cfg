@@ -3,3 +3,7 @@ source ~/.bash.global
 if [[ -f /etc/centos-release ]]; then
     source ~/.bash.centos
 fi
+
+if ls /mnt/c/Users >/dev/null 2>&1; then
+    source ~/.bash.win
+fi
