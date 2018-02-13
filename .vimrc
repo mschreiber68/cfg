@@ -9,12 +9,12 @@ filetype off
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 " Make sure you use single quotes
-call plug#begin('~/.vim/plugged')
-Plug 'https://github.com/davidklsn/vim-sialoquent.git'
-Plug 'tpope/vim-sensible'
+"call plug#begin('~/.vim/plugged')
+"Plug 'https://github.com/davidklsn/vim-sialoquent.git'
+"Plug 'tpope/vim-sensible'
 
 " Initialize plugin system
-call plug#end()
+"call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " END vim-plug - A minimalist Vim plugin manager.
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

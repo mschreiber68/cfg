@@ -7,3 +7,11 @@ fi
 if ls /mnt/c/Users >/dev/null 2>&1; then
     source ~/.bash.win
 fi
+
+if uname -a | grep -q Darwin; then
+    source ~/.bash.mac
+fi
+
+if uname -a | grep -q buntu; then
+    source ~/.bash.ubuntu
+fi

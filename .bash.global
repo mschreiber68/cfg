@@ -9,7 +9,7 @@ shopt -s extglob
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 src() {
-  source ~/.bashrc
+  source ~/.bash.src
 }
 
 vimrc() {
@@ -31,10 +31,14 @@ alias cd....="cd ../../.."
 alias cd.....="cd ../../../.."
 alias cd......="cd ../../../../.."
 
+alias gs='git status'
+alias gac='git add -A && git commit -m'
+alias gpo='git push origin'
+
 alias tmux='tmux -2'
 
 # make dir and cd into it
-mcd() { mkdir "$1" && cd "$1"; }
+mcd() { mkdir -p "$1" && cd "$1"; }
 
 # print source code of function
 fnsrc() { declare -f "$1"; }
@@ -61,4 +65,8 @@ http-here() {
     python -m SimpleHTTPServer
 }
 
-
+# Print terminal color codes and how to use them.
+colors() {
+  for i in {0..255}; do echo -e "\e[38;05;${i}m${i}"; done | column -c 120 -s '  '; echo -e "\e[m"
+  echo 'To print colored data: ''\e[38;05;${number}m${data}\e[m'
+}
