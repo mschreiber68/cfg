@@ -34,8 +34,11 @@ alias cd......="cd ../../../../.."
 alias gs='git status'
 alias gac='git add -A && git commit -m'
 alias gpo='git push origin'
+alias gdmb='git branch --merged | egrep -v "(^\*|master|dev)" | xargs git branch -d'
 
 alias tmux='tmux -2'
+
+alias robo3t='robo3t >/dev/null 2>&1 &'
 
 # make dir and cd into it
 mcd() { mkdir -p "$1" && cd "$1"; }
